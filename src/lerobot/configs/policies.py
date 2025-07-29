@@ -66,6 +66,13 @@ class PreTrainedConfig(draccus.ChoiceRegistry, HubMixin, abc.ABC):
     use_lora: bool = False
     lora_config: dict = field(default_factory=dict)
 
+    # --- PEFT-style LoRA adapter push options ---
+    push_lora_adapter_to_hub: bool = False
+    lora_adapter_repo_id: str | None = None
+    lora_base_model: str | None = None
+    lora_adapter_private: bool = False
+    lora_adapter_token: str | None = None
+
     push_to_hub: bool = True
     repo_id: str | None = None
 

@@ -113,6 +113,14 @@ def train(cfg: TrainPipelineConfig):
     cfg.validate()
     logging.info(pformat(cfg.to_dict()))
 
+    # --- LoRA PEFT-style adapter push options ---
+    import os
+    push_lora_adapter_to_hub = getattr(cfg.policy, "push_lora_adapter_to_hub", False)
+    lora_adapter_repo_id = getattr(cfg.policy, "lora_adapter_repo_id", None)
+    lora_base_model = getattr(cfg.policy, "lora_base_model", None)
+    lora_adapter_private = getattr(cfg.policy, "lora_adapter_private", False)
+    lora_adapter_token = getattr(cfg.policy, "lora_adapter_token", None)
+
     if cfg.wandb.enable and cfg.wandb.project:
         wandb_logger = WandBLogger(cfg)
     else:
@@ -307,6 +315,26 @@ def train(cfg: TrainPipelineConfig):
 
     if cfg.policy.push_to_hub:
         policy.push_model_to_hub(cfg)
+
+    # --- Optionally push LoRA adapter to hub, PEFT-style ---
+    if (
+        getattr(cfg.policy, "use_lora", False)
+        and push_lora_adapter_to_hub
+        and lora_adapter_repo_id
+        and lora_base_model
+    ):
+        try:
+            from lora import push_lora_adapter_to_hub as push_adapter
+            push_adapter(
+                policy,
+                repo_id=lora_adapter_repo_id,
+                base_model=lora_base_model,
+                private=lora_adapter_private,
+                token=lora_adapter_token,
+            )
+            logging.info(f"Pushed LoRA adapter to hub: {lora_adapter_repo_id}")
+        except Exception as e:
+            logging.error(f"Failed to push LoRA adapter to hub: {e}")
 
 
 if __name__ == "__main__":

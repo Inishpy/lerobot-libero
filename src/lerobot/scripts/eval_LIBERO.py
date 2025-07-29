@@ -29,8 +29,14 @@ class Args:
     """
 
     # --- Hugging Face arguments ---
-    policy_path: str = "lerobot/smolvla_base"
-    """Path to the pretrained policy on the Hugging Face Hub or local directory."""
+    policy_path: str = ""
+    """Path to the pretrained base policy on the Hugging Face Hub or local directory."""
+
+    lora_adapter_path: str = ""
+    """Path or Hub repo to the LoRA adapter weights (e.g., 'username/my-lora-adapter' or local file). If empty, no adapter is loaded."""
+
+    use_lora_adapter: bool = False
+    """If True, download and apply LoRA adapter. If False, evaluate base model only."""
 
     # --- LIBERO environment-specific parameters ---
     task_suite_name: str = "libero_spatial"
@@ -59,6 +65,23 @@ def eval_libero(args: Args) -> None:
     # --- Load Policy ---
     policy = SmolVLAPolicy.from_pretrained(args.policy_path)
     policy.to(args.device)
+    # --- Optionally load LoRA adapter ---
+    if args.lora_adapter_path:
+        # Download from hub if needed
+        adapter_file = maybe_download_lora_adapter(args.lora_adapter_path)
+        # Import and call replace_linear_with_lora to ensure model is LoRA-ready
+        from lora import replace_linear_with_lora, load_lora_adapter
+        # Use default LoRA config; if you want to match training, pass the same r, alpha, dropout
+        replace_linear_with_lora(policy)
+        policy.to(args.device)  # Ensure all LoRALinear modules are on the correct device
+        load_lora_adapter(policy, adapter_file)
+        print(f"Loaded LoRA adapter from {adapter_file}")
+        policy.to(args.device)  # Ensure all loaded adapter params are on the correct device
+        # Explicitly move all LoRALinear modules to the correct device (handles loaded params)
+        from lora import LoRALinear
+        for module in policy.modules():
+            if isinstance(module, LoRALinear):
+                module.to(args.device)
     policy.eval()
 
     # --- Initialize LIBERO task suite ---
@@ -248,6 +271,23 @@ def _quat2axisangle(quat):
 
     return (quat[:3] * 2.0 * math.acos(quat[3])) / den
 
+
+def maybe_download_lora_adapter(lora_adapter_path):
+    """
+    If lora_adapter_path is a local file, return it.
+    If it is a Hugging Face Hub repo (e.g., 'username/my-lora-adapter'), download 'adapter_model.bin' from the repo.
+    """
+    import os
+    if os.path.isfile(lora_adapter_path):
+        return lora_adapter_path
+    # Otherwise, treat as HF Hub repo_id
+    try:
+        from huggingface_hub import hf_hub_download
+    except ImportError:
+        raise ImportError("Please install huggingface_hub to download LoRA adapters from the Hub.")
+    # Try to download 'adapter_model.bin' from the repo
+    adapter_file = hf_hub_download(repo_id=lora_adapter_path, filename="adapter_model.bin")
+    return adapter_file
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
