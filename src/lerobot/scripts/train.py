@@ -24,6 +24,9 @@ from termcolor import colored
 from torch.amp import GradScaler
 from torch.optim import Optimizer
 
+# Custom LoRA support
+from lora import replace_linear_with_lora
+
 from lerobot.configs import parser
 from lerobot.configs.train import TrainPipelineConfig
 from lerobot.datasets.factory import make_dataset
@@ -141,7 +144,27 @@ def train(cfg: TrainPipelineConfig):
         ds_meta=dataset.meta,
     )
 
+    # Custom LoRA parameter-efficient finetuning
+    if getattr(cfg.policy, "use_lora", False):
+        lora_cfg_dict = getattr(cfg.policy, "lora_config", {}) or {}
+        r = lora_cfg_dict.get("r", 8)
+        alpha = lora_cfg_dict.get("lora_alpha", 16)
+        dropout = lora_cfg_dict.get("lora_dropout", 0.05)
+        target_modules = lora_cfg_dict.get("target_modules", None)
+        if isinstance(target_modules, str):
+            target_modules = [m.strip() for m in target_modules.split(",")]
+        replace_linear_with_lora(policy, r=r, alpha=alpha, dropout=dropout, target_modules=target_modules)
+        logging.info(colored("Custom LoRA parameter-efficient finetuning enabled.", "cyan", attrs=["bold"]))
+        num_lora_params = sum(p.numel() for p in policy.parameters() if p.requires_grad)
+        num_total_params = sum(p.numel() for p in policy.parameters())
+        logging.info(colored(f"LoRA trainable params: {num_lora_params} / {num_total_params} ({100.0 * num_lora_params / num_total_params:.2f}%)", "cyan"))
+    else:
+        num_lora_params = sum(p.numel() for p in policy.parameters() if p.requires_grad)
+        num_total_params = sum(p.numel() for p in policy.parameters())
+        logging.info(f"Full finetuning: trainable params: {num_lora_params} / {num_total_params} ({100.0 * num_lora_params / num_total_params:.2f}%)")
+
     logging.info("Creating optimizer and scheduler")
+    # Optimizer: only optimize trainable parameters (LoRA or full)
     optimizer, lr_scheduler = make_optimizer_and_scheduler(cfg, policy)
     grad_scaler = GradScaler(device.type, enabled=cfg.policy.use_amp)
 

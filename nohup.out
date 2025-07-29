@@ -1,7 +1,6 @@
-python: can't open file '/home/lunet/coimd/lerobot1/lerobot/src/lerobot/scripts/train.py': [Errno 2] No such file or directory
-INFO 2025-07-29 10:14:14 ils/utils.py:48 Cuda backend detected, using cuda.
-WARNING 2025-07-29 10:14:14 /policies.py:79 Device 'None' is not available. Switching to 'cuda'.
-INFO 2025-07-29 10:14:14 ts/train.py:111 {'batch_size': 256,
+INFO 2025-07-29 19:12:08 ils/utils.py:48 Cuda backend detected, using cuda.
+WARNING 2025-07-29 19:12:08 /policies.py:79 Device 'None' is not available. Switching to 'cuda'.
+INFO 2025-07-29 19:12:08 ts/train.py:111 {'batch_size': 256,
  'dataset': {'episodes': None,
              'image_transforms': {'enable': False,
                                   'max_num_transforms': 3,
@@ -118,22 +117,19 @@ INFO 2025-07-29 10:14:14 ts/train.py:111 {'batch_size': 256,
            'notes': None,
            'project': 'lerobot',
            'run_id': None}}
-INFO 2025-07-29 10:14:14 ts/train.py:117 Logs will be saved locally.
-INFO 2025-07-29 10:14:14 ts/train.py:127 Creating dataset
-Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files:  25%|██▌       | 1/4 [00:00<00:01,  2.55it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00,  8.81it/s]
-Fetching 1302 files:   0%|          | 0/1302 [00:00<?, ?it/s]Fetching 1302 files:   0%|          | 1/1302 [00:00<09:59,  2.17it/s]Fetching 1302 files:   0%|          | 3/1302 [00:01<11:27,  1.89it/s]Fetching 1302 files:   1%|          | 11/1302 [00:02<04:33,  4.73it/s]Fetching 1302 files:   1%|▏         | 18/1302 [00:02<02:43,  7.85it/s]Fetching 1302 files:   2%|▏         | 23/1302 [00:03<02:53,  7.38it/s]Fetching 1302 files:   2%|▏         | 25/1302 [00:04<03:16,  6.48it/s]Fetching 1302 files:   2%|▏         | 28/1302 [00:04<02:36,  8.12it/s]Fetching 1302 files:   2%|▏         | 32/1302 [00:04<02:38,  8.01it/s]Fetching 1302 files:   3%|▎         | 37/1302 [00:05<02:49,  7.48it/s]Fetching 1302 files:   3%|▎         | 43/1302 [00:06<02:28,  8.46it/s]Fetching 1302 files:   4%|▎         | 48/1302 [00:06<02:45,  7.58it/s]Fetching 1302 files:   4%|▍         | 53/1302 [00:07<02:24,  8.65it/s]Fetching 1302 files:   4%|▍         | 56/1302 [00:07<02:02, 10.15it/s]Fetching 1302 files:   4%|▍         | 58/1302 [00:07<02:02, 10.12it/s]Fetching 1302 files:   5%|▍         | 60/1302 [00:08<02:27,  8.40it/s]Fetching 1302 files:   5%|▍         | 65/1302 [00:08<01:46, 11.59it/s]Fetching 1302 files:   5%|▌         | 67/1302 [00:08<02:52,  7.15it/s]Fetching 1302 files:   6%|▌         | 72/1302 [00:09<02:27,  8.33it/s]Fetching 1302 files:   6%|▌         | 75/1302 [00:09<02:16,  8.96it/s]Fetching 1302 files:   6%|▌         | 77/1302 [00:10<02:37,  7.76it/s]Fetching 1302 files:   6%|▋         | 83/1302 [00:10<02:36,  7.81it/s]Fetching 1302 files:   7%|▋         | 91/1302 [00:11<02:34,  7.83it/s]Fetching 1302 files:   7%|▋         | 97/1302 [00:12<01:54, 10.50it/s]Fetching 1302 files:   8%|▊         | 101/1302 [00:12<02:24,  8.29it/s]Fetching 1302 files:   8%|▊         | 105/1302 [00:13<02:21,  8.45it/s]Fetching 1302 files:   8%|▊         | 110/1302 [00:13<01:49, 10.84it/s]Fetching 1302 files:   9%|▊         | 112/1302 [00:14<02:35,  7.63it/s]Fetching 1302 files:   9%|▉         | 119/1302 [00:14<01:42, 11.59it/s]Fetching 1302 files:   9%|▉         | 121/1302 [00:14<01:39, 11.91it/s]Fetching 1302 files:   9%|▉         | 123/1302 [00:14<02:06,  9.30it/s]Fetching 1302 files:  10%|▉         | 127/1302 [00:15<01:46, 11.05it/s]Fetching 1302 files:  10%|▉         | 129/1302 [00:15<02:42,  7.23it/s]Fetching 1302 files:  10%|█         | 131/1302 [00:16<02:47,  6.98it/s]Fetching 1302 files:  10%|█         | 136/1302 [00:16<02:07,  9.16it/s]Fetching 1302 files:  11%|█         | 140/1302 [00:17<02:19,  8.32it/s]Fetching 1302 files:  11%|█         | 145/1302 [00:17<02:17,  8.41it/s]Fetching 1302 files:  12%|█▏        | 150/1302 [00:18<02:07,  9.01it/s]Fetching 1302 files:  12%|█▏        | 154/1302 [00:18<02:07,  8.98it/s]Fetching 1302 files:  12%|█▏        | 160/1302 [00:18<01:44, 10.88it/s]Fetching 1302 files:  12%|█▏        | 162/1302 [00:19<02:28,  7.66it/s]Fetching 1302 files:  13%|█▎        | 165/1302 [00:19<02:10,  8.74it/s]Fetching 1302 files:  13%|█▎        | 169/1302 [00:20<02:10,  8.66it/s]Fetching 1302 files:  13%|█▎        | 172/1302 [00:20<01:50, 10.26it/s]Fetching 1302 files:  14%|█▎        | 176/1302 [00:20<01:24, 13.32it/s]Fetching 1302 files:  14%|█▎        | 179/1302 [00:20<01:35, 11.71it/s]Fetching 1302 files:  14%|█▍        | 181/1302 [00:21<02:00,  9.29it/s]Fetching 1302 files:  14%|█▍        | 185/1302 [00:21<01:32, 12.01it/s]Fetching 1302 files:  14%|█▍        | 187/1302 [00:21<01:29, 12.52it/s]Fetching 1302 files:  15%|█▍        | 189/1302 [00:21<01:46, 10.47it/s]Fetching 1302 files:  15%|█▍        | 191/1302 [00:22<01:37, 11.40it/s]Fetching 1302 files:  15%|█▍        | 193/1302 [00:22<01:37, 11.36it/s]Fetching 1302 files:  15%|█▍        | 195/1302 [00:22<02:15,  8.15it/s]Fetching 1302 files:  15%|█▌        | 197/1302 [00:22<02:30,  7.36it/s]Fetching 1302 files:  16%|█▌        | 203/1302 [00:24<02:52,  6.36it/s]Fetching 1302 files:  16%|█▌        | 211/1302 [00:24<02:01,  8.94it/s]Fetching 1302 files:  16%|█▋        | 213/1302 [00:24<01:56,  9.37it/s]Fetching 1302 files:  17%|█▋        | 218/1302 [00:24<01:25, 12.64it/s]Fetching 1302 files:  17%|█▋        | 220/1302 [00:25<01:23, 13.00it/s]Fetching 1302 files:  17%|█▋        | 222/1302 [00:25<01:20, 13.41it/s]Fetching 1302 files:  17%|█▋        | 224/1302 [00:25<01:16, 14.02it/s]Fetching 1302 files:  17%|█▋        | 226/1302 [00:26<03:15,  5.50it/s]Fetching 1302 files:  18%|█▊        | 230/1302 [00:26<02:10,  8.23it/s]Fetching 1302 files:  18%|█▊        | 234/1302 [00:27<02:22,  7.48it/s]Fetching 1302 files:  18%|█▊        | 239/1302 [00:27<02:02,  8.70it/s]Fetching 1302 files:  19%|█▊        | 241/1302 [00:27<02:09,  8.17it/s]Fetching 1302 files:  19%|█▊        | 243/1302 [00:27<01:55,  9.15it/s]Fetching 1302 files:  19%|█▉        | 245/1302 [00:28<01:46,  9.89it/s]Fetching 1302 files:  19%|█▉        | 247/1302 [00:28<02:15,  7.81it/s]Fetching 1302 files:  19%|█▉        | 252/1302 [00:28<01:21, 12.84it/s]Fetching 1302 files:  20%|█▉        | 255/1302 [00:28<01:18, 13.26it/s]Fetching 1302 files:  20%|█▉        | 257/1302 [00:29<01:46,  9.81it/s]Fetching 1302 files:  20%|█▉        | 260/1302 [00:29<02:29,  6.97it/s]Fetching 1302 files:  20%|██        | 265/1302 [00:30<01:36, 10.73it/s]Fetching 1302 files:  21%|██        | 268/1302 [00:30<01:20, 12.87it/s]Fetching 1302 files:  21%|██        | 271/1302 [00:30<01:46,  9.65it/s]Fetching 1302 files:  21%|██        | 273/1302 [00:31<02:06,  8.11it/s]Fetching 1302 files:  21%|██▏       | 278/1302 [00:31<01:39, 10.24it/s]Fetching 1302 files:  22%|██▏       | 280/1302 [00:31<02:21,  7.23it/s]Fetching 1302 files:  22%|██▏       | 285/1302 [00:32<01:43,  9.87it/s]Fetching 1302 files:  22%|██▏       | 288/1302 [00:32<02:06,  7.99it/s]Fetching 1302 files:  22%|██▏       | 292/1302 [00:32<01:35, 10.60it/s]Fetching 1302 files:  23%|██▎       | 294/1302 [00:33<02:02,  8.24it/s]Fetching 1302 files:  23%|██▎       | 296/1302 [00:33<01:50,  9.11it/s]Fetching 1302 files:  23%|██▎       | 299/1302 [00:33<01:31, 11.02it/s]Fetching 1302 files:  23%|██▎       | 302/1302 [00:33<01:13, 13.64it/s]Fetching 1302 files:  23%|██▎       | 304/1302 [00:34<01:47,  9.30it/s]Fetching 1302 files:  24%|██▎       | 307/1302 [00:34<01:51,  8.94it/s]Fetching 1302 files:  24%|██▎       | 309/1302 [00:34<02:01,  8.15it/s]Fetching 1302 files:  24%|██▍       | 314/1302 [00:35<01:16, 12.92it/s]Fetching 1302 files:  24%|██▍       | 317/1302 [00:35<01:27, 11.26it/s]Fetching 1302 files:  25%|██▍       | 319/1302 [00:36<02:17,  7.15it/s]Fetching 1302 files:  25%|██▍       | 324/1302 [00:36<01:30, 10.75it/s]Fetching 1302 files:  25%|██▌       | 326/1302 [00:36<02:00,  8.08it/s]Fetching 1302 files:  25%|██▌       | 328/1302 [00:36<01:51,  8.72it/s]Fetching 1302 files:  25%|██▌       | 330/1302 [00:37<01:59,  8.14it/s]Fetching 1302 files:  25%|██▌       | 332/1302 [00:37<01:57,  8.24it/s]Fetching 1302 files:  26%|██▌       | 336/1302 [00:37<01:19, 12.16it/s]Fetching 1302 files:  26%|██▌       | 338/1302 [00:38<02:06,  7.63it/s]Fetching 1302 files:  26%|██▋       | 345/1302 [00:38<01:16, 12.47it/s]Fetching 1302 files:  27%|██▋       | 347/1302 [00:38<01:31, 10.48it/s]Fetching 1302 files:  27%|██▋       | 349/1302 [00:39<02:13,  7.12it/s]Fetching 1302 files:  27%|██▋       | 356/1302 [00:39<01:14, 12.77it/s]Fetching 1302 files:  28%|██▊       | 359/1302 [00:39<01:10, 13.44it/s]Fetching 1302 files:  28%|██▊       | 362/1302 [00:40<02:20,  6.67it/s]Fetching 1302 files:  28%|██▊       | 369/1302 [00:40<01:22, 11.25it/s]Fetching 1302 files:  29%|██▊       | 372/1302 [00:41<01:18, 11.86it/s]Fetching 1302 files:  29%|██▉       | 375/1302 [00:41<01:29, 10.40it/s]Fetching 1302 files:  29%|██▉       | 377/1302 [00:41<01:23, 11.03it/s]Fetching 1302 files:  29%|██▉       | 379/1302 [00:42<02:04,  7.43it/s]Fetching 1302 files:  29%|██▉       | 382/1302 [00:42<01:47,  8.54it/s]Fetching 1302 files:  30%|██▉       | 386/1302 [00:42<01:17, 11.87it/s]Fetching 1302 files:  30%|██▉       | 389/1302 [00:42<01:26, 10.51it/s]Fetching 1302 files:  30%|███       | 391/1302 [00:43<02:03,  7.37it/s]Fetching 1302 files:  30%|███       | 396/1302 [00:43<01:19, 11.37it/s]Fetching 1302 files:  31%|███       | 399/1302 [00:43<01:12, 12.50it/s]Fetching 1302 files:  31%|███       | 401/1302 [00:43<01:09, 12.89it/s]Fetching 1302 files:  31%|███       | 403/1302 [00:44<01:25, 10.56it/s]Fetching 1302 files:  31%|███       | 405/1302 [00:44<01:22, 10.90it/s]Fetching 1302 files:  31%|███▏      | 407/1302 [00:45<02:21,  6.31it/s]Fetching 1302 files:  32%|███▏      | 415/1302 [00:45<01:11, 12.43it/s]Fetching 1302 files:  32%|███▏      | 417/1302 [00:45<01:24, 10.53it/s]Fetching 1302 files:  32%|███▏      | 419/1302 [00:46<02:15,  6.51it/s]Fetching 1302 files:  33%|███▎      | 426/1302 [00:46<01:22, 10.63it/s]Fetching 1302 files:  33%|███▎      | 428/1302 [00:47<01:46,  8.23it/s]Fetching 1302 files:  33%|███▎      | 433/1302 [00:47<01:39,  8.72it/s]Fetching 1302 files:  34%|███▎      | 439/1302 [00:48<01:25, 10.06it/s]Fetching 1302 files:  34%|███▍      | 441/1302 [00:48<01:24, 10.19it/s]Fetching 1302 files:  34%|███▍      | 445/1302 [00:48<01:17, 11.13it/s]Fetching 1302 files:  34%|███▍      | 449/1302 [00:48<01:00, 14.06it/s]Fetching 1302 files:  35%|███▍      | 451/1302 [00:49<02:01,  7.03it/s]Fetching 1302 files:  35%|███▍      | 454/1302 [00:49<01:49,  7.73it/s]Fetching 1302 files:  35%|███▌      | 458/1302 [00:50<01:59,  7.05it/s]Fetching 1302 files:  35%|███▌      | 461/1302 [00:50<01:39,  8.44it/s]Fetching 1302 files:  36%|███▌      | 463/1302 [00:51<01:40,  8.34it/s]Fetching 1302 files:  36%|███▌      | 465/1302 [00:51<01:35,  8.74it/s]Fetching 1302 files:  36%|███▌      | 467/1302 [00:51<01:29,  9.29it/s]Fetching 1302 files:  36%|███▌      | 469/1302 [00:52<02:28,  5.59it/s]Fetching 1302 files:  36%|███▋      | 473/1302 [00:52<01:41,  8.18it/s]Fetching 1302 files:  37%|███▋      | 477/1302 [00:52<01:39,  8.26it/s]Fetching 1302 files:  37%|███▋      | 480/1302 [00:53<02:07,  6.45it/s]Fetching 1302 files:  37%|███▋      | 483/1302 [00:53<02:00,  6.77it/s]Fetching 1302 files:  37%|███▋      | 487/1302 [00:54<01:36,  8.43it/s]Fetching 1302 files:  38%|███▊      | 490/1302 [00:54<01:28,  9.22it/s]Fetching 1302 files:  38%|███▊      | 492/1302 [00:54<01:38,  8.24it/s]Fetching 1302 files:  38%|███▊      | 495/1302 [00:55<01:28,  9.17it/s]Fetching 1302 files:  38%|███▊      | 499/1302 [00:55<01:50,  7.24it/s]Fetching 1302 files:  38%|███▊      | 500/1302 [00:55<01:55,  6.93it/s]Fetching 1302 files:  39%|███▉      | 506/1302 [00:56<01:18, 10.16it/s]Fetching 1302 files:  39%|███▉      | 508/1302 [00:56<01:19,  9.99it/s]Fetching 1302 files:  39%|███▉      | 510/1302 [00:56<01:32,  8.52it/s]Fetching 1302 files:  39%|███▉      | 512/1302 [00:57<02:50,  4.64it/s]Fetching 1302 files:  40%|███▉      | 517/1302 [00:58<01:43,  7.60it/s]Fetching 1302 files:  40%|████      | 522/1302 [00:58<01:14, 10.43it/s]Fetching 1302 files:  40%|████      | 524/1302 [00:59<01:52,  6.91it/s]Fetching 1302 files:  40%|████      | 526/1302 [00:59<01:44,  7.41it/s]Fetching 1302 files:  41%|████      | 529/1302 [00:59<01:31,  8.43it/s]Fetching 1302 files:  41%|████      | 531/1302 [00:59<01:34,  8.12it/s]Fetching 1302 files:  41%|████      | 536/1302 [01:00<01:43,  7.37it/s]Fetching 1302 files:  41%|████▏     | 538/1302 [01:00<01:32,  8.28it/s]Fetching 1302 files:  42%|████▏     | 544/1302 [01:01<01:54,  6.60it/s]Fetching 1302 files:  42%|████▏     | 551/1302 [01:02<01:24,  8.88it/s]Fetching 1302 files:  42%|████▏     | 553/1302 [01:02<01:36,  7.74it/s]Fetching 1302 files:  43%|████▎     | 559/1302 [01:03<01:29,  8.33it/s]Fetching 1302 files:  43%|████▎     | 561/1302 [01:03<01:36,  7.71it/s]Fetching 1302 files:  43%|████▎     | 563/1302 [01:03<01:26,  8.53it/s]Fetching 1302 files:  43%|████▎     | 566/1302 [01:03<01:13,  9.98it/s]Fetching 1302 files:  44%|████▎     | 568/1302 [01:04<01:07, 10.84it/s]Fetching 1302 files:  44%|████▍     | 571/1302 [01:04<00:57, 12.71it/s]Fetching 1302 files:  44%|████▍     | 573/1302 [01:04<01:00, 12.10it/s]Fetching 1302 files:  44%|████▍     | 575/1302 [01:05<01:43,  7.01it/s]Fetching 1302 files:  44%|████▍     | 578/1302 [01:05<01:28,  8.22it/s]Fetching 1302 files:  45%|████▍     | 582/1302 [01:05<01:03, 11.36it/s]Fetching 1302 files:  45%|████▍     | 585/1302 [01:06<01:47,  6.64it/s]Fetching 1302 files:  46%|████▌     | 593/1302 [01:06<01:01, 11.62it/s]Fetching 1302 files:  46%|████▌     | 595/1302 [01:06<01:03, 11.22it/s]Fetching 1302 files:  46%|████▌     | 597/1302 [01:06<00:59, 11.91it/s]Fetching 1302 files:  46%|████▌     | 600/1302 [01:07<00:58, 11.94it/s]Fetching 1302 files:  46%|████▌     | 602/1302 [01:07<00:56, 12.40it/s]Fetching 1302 files:  46%|████▋     | 604/1302 [01:07<01:03, 11.07it/s]Fetching 1302 files:  47%|████▋     | 606/1302 [01:07<00:56, 12.29it/s]Fetching 1302 files:  47%|████▋     | 608/1302 [01:08<01:36,  7.23it/s]Fetching 1302 files:  47%|████▋     | 614/1302 [01:08<00:53, 12.74it/s]Fetching 1302 files:  47%|████▋     | 616/1302 [01:08<01:02, 10.96it/s]Fetching 1302 files:  47%|████▋     | 618/1302 [01:08<01:10,  9.72it/s]Fetching 1302 files:  48%|████▊     | 621/1302 [01:09<00:58, 11.63it/s]Fetching 1302 files:  48%|████▊     | 623/1302 [01:09<01:07,  9.99it/s]Fetching 1302 files:  48%|████▊     | 626/1302 [01:09<01:00, 11.16it/s]Fetching 1302 files:  48%|████▊     | 629/1302 [01:09<00:53, 12.50it/s]Fetching 1302 files:  48%|████▊     | 631/1302 [01:10<01:04, 10.35it/s]Fetching 1302 files:  49%|████▊     | 634/1302 [01:10<01:01, 10.85it/s]Fetching 1302 files:  49%|████▉     | 637/1302 [01:10<01:03, 10.49it/s]Fetching 1302 files:  49%|████▉     | 639/1302 [01:11<01:48,  6.13it/s]Fetching 1302 files:  50%|████▉     | 647/1302 [01:12<01:18,  8.32it/s]Fetching 1302 files:  50%|█████     | 655/1302 [01:12<00:53, 12.16it/s]Fetching 1302 files:  50%|█████     | 657/1302 [01:12<00:52, 12.21it/s]Fetching 1302 files:  51%|█████     | 659/1302 [01:12<01:05,  9.79it/s]Fetching 1302 files:  51%|█████     | 663/1302 [01:13<00:53, 11.92it/s]Fetching 1302 files:  51%|█████     | 665/1302 [01:13<00:50, 12.50it/s]Fetching 1302 files:  51%|█████     | 667/1302 [01:13<00:58, 10.78it/s]Fetching 1302 files:  51%|█████▏    | 669/1302 [01:13<00:53, 11.94it/s]Fetching 1302 files:  52%|█████▏    | 671/1302 [01:13<00:55, 11.46it/s]Fetching 1302 files:  52%|█████▏    | 673/1302 [01:13<00:53, 11.75it/s]Fetching 1302 files:  52%|█████▏    | 675/1302 [01:14<01:00, 10.32it/s]Fetching 1302 files:  52%|█████▏    | 677/1302 [01:14<00:59, 10.54it/s]Fetching 1302 files:  52%|█████▏    | 679/1302 [01:15<01:36,  6.46it/s]Fetching 1302 files:  53%|█████▎    | 684/1302 [01:15<00:56, 11.01it/s]Fetching 1302 files:  53%|█████▎    | 687/1302 [01:15<00:57, 10.77it/s]Fetching 1302 files:  53%|█████▎    | 689/1302 [01:15<01:01,  9.96it/s]Fetching 1302 files:  53%|█████▎    | 692/1302 [01:15<00:51, 11.86it/s]Fetching 1302 files:  53%|█████▎    | 694/1302 [01:16<01:33,  6.51it/s]Fetching 1302 files:  54%|█████▍    | 702/1302 [01:16<00:47, 12.75it/s]Fetching 1302 files:  54%|█████▍    | 705/1302 [01:17<00:55, 10.79it/s]Fetching 1302 files:  54%|█████▍    | 707/1302 [01:17<01:00,  9.80it/s]Fetching 1302 files:  55%|█████▍    | 712/1302 [01:17<00:51, 11.47it/s]Fetching 1302 files:  55%|█████▍    | 714/1302 [01:18<01:19,  7.44it/s]Fetching 1302 files:  55%|█████▌    | 721/1302 [01:18<00:50, 11.57it/s]Fetching 1302 files:  56%|█████▌    | 723/1302 [01:18<00:49, 11.60it/s]Fetching 1302 files:  56%|█████▌    | 726/1302 [01:19<00:44, 12.85it/s]Fetching 1302 files:  56%|█████▌    | 728/1302 [01:19<00:43, 13.24it/s]Fetching 1302 files:  56%|█████▌    | 730/1302 [01:19<00:59,  9.60it/s]Fetching 1302 files:  56%|█████▌    | 732/1302 [01:20<01:27,  6.54it/s]Fetching 1302 files:  57%|█████▋    | 739/1302 [01:20<00:49, 11.38it/s]Fetching 1302 files:  57%|█████▋    | 742/1302 [01:20<00:48, 11.49it/s]Fetching 1302 files:  57%|█████▋    | 744/1302 [01:21<00:55, 10.06it/s]Fetching 1302 files:  57%|█████▋    | 747/1302 [01:21<00:45, 12.07it/s]Fetching 1302 files:  58%|█████▊    | 749/1302 [01:21<00:45, 12.20it/s]Fetching 1302 files:  58%|█████▊    | 751/1302 [01:21<00:58,  9.43it/s]Fetching 1302 files:  58%|█████▊    | 753/1302 [01:21<00:55,  9.81it/s]Fetching 1302 files:  58%|█████▊    | 755/1302 [01:22<01:25,  6.39it/s]Fetching 1302 files:  58%|█████▊    | 761/1302 [01:22<00:45, 11.82it/s]Fetching 1302 files:  59%|█████▊    | 764/1302 [01:22<00:47, 11.38it/s]Fetching 1302 files:  59%|█████▉    | 766/1302 [01:23<00:50, 10.55it/s]Fetching 1302 files:  59%|█████▉    | 768/1302 [01:23<00:45, 11.78it/s]Fetching 1302 files:  59%|█████▉    | 770/1302 [01:23<00:43, 12.27it/s]Fetching 1302 files:  59%|█████▉    | 772/1302 [01:23<00:45, 11.68it/s]Fetching 1302 files:  59%|█████▉    | 774/1302 [01:23<01:00,  8.76it/s]Fetching 1302 files:  60%|█████▉    | 778/1302 [01:24<00:40, 12.83it/s]Fetching 1302 files:  60%|█████▉    | 780/1302 [01:24<00:41, 12.51it/s]Fetching 1302 files:  60%|██████    | 782/1302 [01:24<00:58,  8.93it/s]Fetching 1302 files:  60%|██████    | 785/1302 [01:24<00:49, 10.54it/s]Fetching 1302 files:  60%|██████    | 787/1302 [01:25<00:49, 10.46it/s]Fetching 1302 files:  61%|██████    | 789/1302 [01:25<00:46, 11.07it/s]Fetching 1302 files:  61%|██████    | 791/1302 [01:25<00:47, 10.74it/s]Fetching 1302 files:  61%|██████    | 793/1302 [01:25<01:11,  7.16it/s]Fetching 1302 files:  61%|██████▏   | 798/1302 [01:26<00:45, 11.12it/s]Fetching 1302 files:  61%|██████▏   | 800/1302 [01:26<01:08,  7.37it/s]Fetching 1302 files:  62%|██████▏   | 806/1302 [01:26<00:39, 12.61it/s]Fetching 1302 files:  62%|██████▏   | 809/1302 [01:27<00:47, 10.45it/s]Fetching 1302 files:  62%|██████▏   | 811/1302 [01:27<00:47, 10.30it/s]Fetching 1302 files:  63%|██████▎   | 815/1302 [01:27<00:48, 10.09it/s]Fetching 1302 files:  63%|██████▎   | 817/1302 [01:28<00:44, 10.93it/s]Fetching 1302 files:  63%|██████▎   | 819/1302 [01:28<00:52,  9.26it/s]Fetching 1302 files:  63%|██████▎   | 823/1302 [01:28<00:43, 11.08it/s]Fetching 1302 files:  63%|██████▎   | 825/1302 [01:28<00:38, 12.26it/s]Fetching 1302 files:  64%|██████▎   | 827/1302 [01:28<00:44, 10.68it/s]Fetching 1302 files:  64%|██████▎   | 830/1302 [01:29<00:37, 12.68it/s]Fetching 1302 files:  64%|██████▍   | 832/1302 [01:29<00:43, 10.76it/s]Fetching 1302 files:  64%|██████▍   | 834/1302 [01:29<00:40, 11.48it/s]Fetching 1302 files:  64%|██████▍   | 836/1302 [01:29<00:42, 10.94it/s]Fetching 1302 files:  64%|██████▍   | 838/1302 [01:29<00:41, 11.21it/s]Fetching 1302 files:  65%|██████▍   | 840/1302 [01:30<00:45, 10.08it/s]Fetching 1302 files:  65%|██████▍   | 842/1302 [01:30<00:43, 10.62it/s]Fetching 1302 files:  65%|██████▍   | 844/1302 [01:30<00:40, 11.42it/s]Fetching 1302 files:  65%|██████▍   | 846/1302 [01:30<00:40, 11.33it/s]Fetching 1302 files:  65%|██████▌   | 848/1302 [01:30<00:45, 10.00it/s]Fetching 1302 files:  65%|██████▌   | 850/1302 [01:31<00:38, 11.75it/s]Fetching 1302 files:  65%|██████▌   | 852/1302 [01:31<00:39, 11.51it/s]Fetching 1302 files:  66%|██████▌   | 854/1302 [01:31<00:37, 11.86it/s]Fetching 1302 files:  66%|██████▌   | 856/1302 [01:31<00:50,  8.88it/s]Fetching 1302 files:  66%|██████▌   | 860/1302 [01:31<00:40, 10.85it/s]Fetching 1302 files:  66%|██████▌   | 862/1302 [01:32<00:40, 10.80it/s]Fetching 1302 files:  66%|██████▋   | 864/1302 [01:32<00:46,  9.38it/s]Fetching 1302 files:  67%|██████▋   | 868/1302 [01:32<00:36, 11.80it/s]Fetching 1302 files:  67%|██████▋   | 870/1302 [01:32<00:37, 11.41it/s]Fetching 1302 files:  67%|██████▋   | 872/1302 [01:33<00:47,  9.14it/s]Fetching 1302 files:  67%|██████▋   | 876/1302 [01:33<00:36, 11.66it/s]Fetching 1302 files:  67%|██████▋   | 878/1302 [01:33<00:49,  8.64it/s]Fetching 1302 files:  68%|██████▊   | 881/1302 [01:33<00:38, 10.92it/s]Fetching 1302 files:  68%|██████▊   | 884/1302 [01:34<00:33, 12.30it/s]Fetching 1302 files:  68%|██████▊   | 886/1302 [01:34<00:40, 10.35it/s]Fetching 1302 files:  68%|██████▊   | 889/1302 [01:34<00:39, 10.55it/s]Fetching 1302 files:  69%|██████▊   | 892/1302 [01:34<00:35, 11.68it/s]Fetching 1302 files:  69%|██████▊   | 894/1302 [01:35<00:38, 10.56it/s]Fetching 1302 files:  69%|██████▉   | 896/1302 [01:35<00:40, 10.10it/s]Fetching 1302 files:  69%|██████▉   | 898/1302 [01:35<00:35, 11.31it/s]Fetching 1302 files:  69%|██████▉   | 901/1302 [01:35<00:32, 12.46it/s]Fetching 1302 files:  69%|██████▉   | 903/1302 [01:36<01:16,  5.19it/s]Fetching 1302 files:  70%|██████▉   | 911/1302 [01:36<00:34, 11.31it/s]Fetching 1302 files:  70%|███████   | 914/1302 [01:37<00:32, 12.11it/s]Fetching 1302 files:  70%|███████   | 917/1302 [01:37<00:36, 10.43it/s]Fetching 1302 files:  71%|███████   | 919/1302 [01:37<00:34, 11.00it/s]Fetching 1302 files:  71%|███████   | 921/1302 [01:37<00:32, 11.58it/s]Fetching 1302 files:  71%|███████   | 923/1302 [01:37<00:29, 12.70it/s]Fetching 1302 files:  71%|███████   | 925/1302 [01:38<00:36, 10.31it/s]Fetching 1302 files:  71%|███████   | 927/1302 [01:38<00:34, 10.99it/s]Fetching 1302 files:  71%|███████▏  | 929/1302 [01:38<00:33, 11.27it/s]Fetching 1302 files:  72%|███████▏  | 933/1302 [01:38<00:35, 10.30it/s]Fetching 1302 files:  72%|███████▏  | 935/1302 [01:39<00:33, 10.83it/s]Fetching 1302 files:  72%|███████▏  | 937/1302 [01:39<00:31, 11.43it/s]Fetching 1302 files:  72%|███████▏  | 941/1302 [01:39<00:34, 10.35it/s]Fetching 1302 files:  72%|███████▏  | 943/1302 [01:39<00:31, 11.37it/s]Fetching 1302 files:  73%|███████▎  | 945/1302 [01:39<00:32, 11.00it/s]Fetching 1302 files:  73%|███████▎  | 947/1302 [01:40<00:28, 12.36it/s]Fetching 1302 files:  73%|███████▎  | 949/1302 [01:40<00:35,  9.84it/s]Fetching 1302 files:  73%|███████▎  | 951/1302 [01:40<00:30, 11.37it/s]Fetching 1302 files:  73%|███████▎  | 953/1302 [01:40<00:29, 11.91it/s]Fetching 1302 files:  73%|███████▎  | 956/1302 [01:40<00:25, 13.34it/s]Fetching 1302 files:  74%|███████▎  | 958/1302 [01:41<00:33, 10.37it/s]Fetching 1302 files:  74%|███████▎  | 960/1302 [01:41<00:31, 10.81it/s]Fetching 1302 files:  74%|███████▍  | 962/1302 [01:41<00:30, 11.25it/s]Fetching 1302 files:  74%|███████▍  | 965/1302 [01:41<00:35,  9.56it/s]Fetching 1302 files:  74%|███████▍  | 967/1302 [01:42<00:32, 10.16it/s]Fetching 1302 files:  74%|███████▍  | 969/1302 [01:42<00:32, 10.32it/s]Fetching 1302 files:  75%|███████▍  | 973/1302 [01:42<00:30, 10.84it/s]Fetching 1302 files:  75%|███████▍  | 975/1302 [01:42<00:31, 10.45it/s]Fetching 1302 files:  75%|███████▌  | 977/1302 [01:42<00:29, 11.02it/s]Fetching 1302 files:  75%|███████▌  | 980/1302 [01:43<00:25, 12.67it/s]Fetching 1302 files:  75%|███████▌  | 982/1302 [01:43<00:26, 12.09it/s]Fetching 1302 files:  76%|███████▌  | 984/1302 [01:43<00:41,  7.72it/s]Fetching 1302 files:  76%|███████▌  | 989/1302 [01:44<00:28, 10.80it/s]Fetching 1302 files:  76%|███████▌  | 991/1302 [01:44<00:30, 10.15it/s]Fetching 1302 files:  76%|███████▋  | 993/1302 [01:44<00:28, 10.86it/s]Fetching 1302 files:  76%|███████▋  | 995/1302 [01:44<00:26, 11.45it/s]Fetching 1302 files:  77%|███████▋  | 997/1302 [01:45<00:38,  7.85it/s]Fetching 1302 files:  77%|███████▋  | 999/1302 [01:48<02:53,  1.75it/s]Fetching 1302 files:  79%|███████▉  | 1028/1302 [01:49<00:26, 10.16it/s]Fetching 1302 files:  79%|███████▉  | 1033/1302 [01:49<00:23, 11.59it/s]Fetching 1302 files:  80%|███████▉  | 1037/1302 [01:49<00:20, 13.05it/s]Fetching 1302 files:  80%|███████▉  | 1041/1302 [01:50<00:28,  9.07it/s]Fetching 1302 files:  80%|████████  | 1047/1302 [01:50<00:21, 11.62it/s]Fetching 1302 files:  81%|████████  | 1050/1302 [01:50<00:21, 11.94it/s]Fetching 1302 files:  81%|████████  | 1053/1302 [01:50<00:19, 12.55it/s]Fetching 1302 files:  81%|████████  | 1056/1302 [01:51<00:25,  9.70it/s]Fetching 1302 files:  81%|████████▏ | 1060/1302 [01:51<00:20, 11.64it/s]Fetching 1302 files:  82%|████████▏ | 1062/1302 [01:51<00:19, 12.02it/s]Fetching 1302 files:  82%|████████▏ | 1064/1302 [01:52<00:23, 10.03it/s]Fetching 1302 files:  82%|████████▏ | 1066/1302 [01:52<00:26,  8.80it/s]Fetching 1302 files:  82%|████████▏ | 1071/1302 [01:52<00:21, 10.82it/s]Fetching 1302 files:  82%|████████▏ | 1073/1302 [01:52<00:19, 11.49it/s]Fetching 1302 files:  83%|████████▎ | 1075/1302 [01:53<00:28,  7.83it/s]Fetching 1302 files:  83%|████████▎ | 1081/1302 [01:53<00:17, 12.87it/s]Fetching 1302 files:  83%|████████▎ | 1083/1302 [01:53<00:19, 11.25it/s]Fetching 1302 files:  83%|████████▎ | 1086/1302 [01:54<00:21, 10.14it/s]Fetching 1302 files:  84%|████████▎ | 1089/1302 [01:54<00:17, 12.43it/s]Fetching 1302 files:  84%|████████▍ | 1091/1302 [01:54<00:20, 10.09it/s]Fetching 1302 files:  84%|████████▍ | 1094/1302 [01:54<00:20, 10.01it/s]Fetching 1302 files:  84%|████████▍ | 1097/1302 [01:55<00:19, 10.59it/s]Fetching 1302 files:  84%|████████▍ | 1099/1302 [01:55<00:17, 11.39it/s]Fetching 1302 files:  85%|████████▍ | 1101/1302 [01:55<00:15, 12.62it/s]Fetching 1302 files:  85%|████████▍ | 1103/1302 [01:55<00:18, 10.51it/s]Fetching 1302 files:  85%|████████▍ | 1105/1302 [01:55<00:19, 10.35it/s]Fetching 1302 files:  85%|████████▌ | 1107/1302 [01:56<00:18, 10.66it/s]Fetching 1302 files:  85%|████████▌ | 1110/1302 [01:56<00:17, 11.10it/s]Fetching 1302 files:  85%|████████▌ | 1113/1302 [01:56<00:16, 11.18it/s]Fetching 1302 files:  86%|████████▌ | 1115/1302 [01:56<00:17, 10.63it/s]Fetching 1302 files:  86%|████████▌ | 1118/1302 [01:57<00:16, 10.94it/s]Fetching 1302 files:  86%|████████▌ | 1120/1302 [01:57<00:19,  9.43it/s]Fetching 1302 files:  86%|████████▋ | 1123/1302 [01:57<00:18,  9.64it/s]Fetching 1302 files:  86%|████████▋ | 1126/1302 [01:57<00:16, 10.80it/s]Fetching 1302 files:  87%|████████▋ | 1129/1302 [01:58<00:14, 12.23it/s]Fetching 1302 files:  87%|████████▋ | 1131/1302 [01:58<00:16, 10.44it/s]Fetching 1302 files:  87%|████████▋ | 1133/1302 [01:58<00:17,  9.57it/s]Fetching 1302 files:  87%|████████▋ | 1137/1302 [01:58<00:14, 11.69it/s]Fetching 1302 files:  87%|████████▋ | 1139/1302 [01:59<00:14, 11.44it/s]Fetching 1302 files:  88%|████████▊ | 1141/1302 [01:59<00:16,  9.77it/s]Fetching 1302 files:  88%|████████▊ | 1143/1302 [01:59<00:19,  8.21it/s]Fetching 1302 files:  88%|████████▊ | 1148/1302 [01:59<00:13, 11.54it/s]Fetching 1302 files:  88%|████████▊ | 1150/1302 [02:00<00:14, 10.36it/s]Fetching 1302 files:  88%|████████▊ | 1152/1302 [02:00<00:13, 10.81it/s]Fetching 1302 files:  89%|████████▊ | 1154/1302 [02:00<00:12, 11.95it/s]Fetching 1302 files:  89%|████████▉ | 1156/1302 [02:00<00:13, 11.04it/s]Fetching 1302 files:  89%|████████▉ | 1158/1302 [02:00<00:13, 10.54it/s]Fetching 1302 files:  89%|████████▉ | 1160/1302 [02:01<00:13, 10.47it/s]Fetching 1302 files:  89%|████████▉ | 1162/1302 [02:01<00:13, 10.66it/s]Fetching 1302 files:  89%|████████▉ | 1164/1302 [02:01<00:11, 11.71it/s]Fetching 1302 files:  90%|████████▉ | 1166/1302 [02:01<00:16,  8.02it/s]Fetching 1302 files:  90%|████████▉ | 1170/1302 [02:01<00:10, 12.27it/s]Fetching 1302 files:  90%|█████████ | 1172/1302 [02:02<00:09, 13.29it/s]Fetching 1302 files:  90%|█████████ | 1174/1302 [02:02<00:14,  8.88it/s]Fetching 1302 files:  90%|█████████ | 1177/1302 [02:02<00:11, 11.03it/s]Fetching 1302 files:  91%|█████████ | 1179/1302 [02:02<00:10, 11.78it/s]Fetching 1302 files:  91%|█████████ | 1181/1302 [02:03<00:12,  9.84it/s]Fetching 1302 files:  91%|█████████ | 1183/1302 [02:03<00:12,  9.32it/s]Fetching 1302 files:  91%|█████████ | 1186/1302 [02:03<00:10, 11.28it/s]Fetching 1302 files:  91%|█████████▏| 1189/1302 [02:03<00:11, 10.11it/s]Fetching 1302 files:  91%|█████████▏| 1191/1302 [02:04<00:12,  8.55it/s]Fetching 1302 files:  92%|█████████▏| 1197/1302 [02:04<00:08, 11.67it/s]Fetching 1302 files:  92%|█████████▏| 1199/1302 [02:04<00:10, 10.25it/s]Fetching 1302 files:  92%|█████████▏| 1202/1302 [02:05<00:09, 10.05it/s]Fetching 1302 files:  93%|█████████▎| 1205/1302 [02:05<00:07, 12.39it/s]Fetching 1302 files:  93%|█████████▎| 1207/1302 [02:05<00:09, 10.11it/s]Fetching 1302 files:  93%|█████████▎| 1210/1302 [02:05<00:07, 12.12it/s]Fetching 1302 files:  93%|█████████▎| 1212/1302 [02:05<00:07, 12.30it/s]Fetching 1302 files:  93%|█████████▎| 1214/1302 [02:06<00:09,  9.20it/s]Fetching 1302 files:  93%|█████████▎| 1217/1302 [02:06<00:07, 12.06it/s]Fetching 1302 files:  94%|█████████▎| 1219/1302 [02:06<00:06, 12.55it/s]Fetching 1302 files:  94%|█████████▍| 1221/1302 [02:06<00:08,  9.61it/s]Fetching 1302 files:  94%|█████████▍| 1223/1302 [02:07<00:08,  9.07it/s]Fetching 1302 files:  94%|█████████▍| 1226/1302 [02:07<00:06, 11.10it/s]Fetching 1302 files:  94%|█████████▍| 1228/1302 [02:07<00:05, 12.52it/s]Fetching 1302 files:  94%|█████████▍| 1230/1302 [02:07<00:07, 10.02it/s]Fetching 1302 files:  95%|█████████▍| 1232/1302 [02:07<00:07,  9.44it/s]Fetching 1302 files:  95%|█████████▍| 1236/1302 [02:08<00:05, 12.49it/s]Fetching 1302 files:  95%|█████████▌| 1238/1302 [02:08<00:06, 10.40it/s]Fetching 1302 files:  95%|█████████▌| 1240/1302 [02:08<00:06,  9.14it/s]Fetching 1302 files:  96%|█████████▌| 1244/1302 [02:08<00:04, 13.17it/s]Fetching 1302 files:  96%|█████████▌| 1246/1302 [02:09<00:05,  9.77it/s]Fetching 1302 files:  96%|█████████▌| 1248/1302 [02:09<00:05, 10.47it/s]Fetching 1302 files:  96%|█████████▌| 1252/1302 [02:09<00:03, 13.13it/s]Fetching 1302 files:  96%|█████████▋| 1254/1302 [02:09<00:05,  9.17it/s]Fetching 1302 files:  96%|█████████▋| 1256/1302 [02:10<00:04,  9.61it/s]Fetching 1302 files:  97%|█████████▋| 1260/1302 [02:10<00:03, 13.99it/s]Fetching 1302 files:  97%|█████████▋| 1263/1302 [02:10<00:04,  9.69it/s]Fetching 1302 files:  97%|█████████▋| 1265/1302 [02:11<00:04,  8.81it/s]Fetching 1302 files:  97%|█████████▋| 1269/1302 [02:11<00:03,  9.47it/s]Fetching 1302 files:  98%|█████████▊| 1272/1302 [02:11<00:02, 11.27it/s]Fetching 1302 files:  98%|█████████▊| 1275/1302 [02:11<00:02, 13.18it/s]Fetching 1302 files:  98%|█████████▊| 1277/1302 [02:12<00:02,  9.58it/s]Fetching 1302 files:  98%|█████████▊| 1280/1302 [02:12<00:01, 11.64it/s]Fetching 1302 files:  98%|█████████▊| 1282/1302 [02:12<00:01, 12.87it/s]Fetching 1302 files:  99%|█████████▊| 1285/1302 [02:12<00:01,  8.94it/s]Fetching 1302 files:  99%|█████████▉| 1290/1302 [02:13<00:00, 13.13it/s]Fetching 1302 files:  99%|█████████▉| 1292/1302 [02:13<00:00, 12.54it/s]Fetching 1302 files:  99%|█████████▉| 1294/1302 [02:13<00:00,  9.30it/s]Fetching 1302 files: 100%|█████████▉| 1298/1302 [02:13<00:00, 12.92it/s]Fetching 1302 files: 100%|█████████▉| 1300/1302 [02:14<00:00, 11.42it/s]Fetching 1302 files: 100%|██████████| 1302/1302 [02:14<00:00,  9.73it/s]Fetching 1302 files: 100%|██████████| 1302/1302 [02:14<00:00,  9.69it/s]
-Downloading data:   0%|          | 0/432 [00:00<?, ?files/s]Downloading data: 100%|██████████| 432/432 [00:00<00:00, 58728.14files/s]
-Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 13481 examples [00:00, 133353.64 examples/s]Generating train split: 33195 examples [00:00, 131281.94 examples/s]Generating train split: 52721 examples [00:00, 130241.43 examples/s]Generating train split: 52970 examples [00:00, 130560.09 examples/s]
-INFO 2025-07-29 10:16:32 ts/train.py:138 Creating policy
+INFO 2025-07-29 19:12:08 ts/train.py:117 Logs will be saved locally.
+INFO 2025-07-29 19:12:08 ts/train.py:127 Creating dataset
+INFO 2025-07-29 19:12:09 ts/train.py:138 Creating policy
 You have video processor config saved in `preprocessor.json` file which is deprecated. Video processor configs should be saved in their own `video_preprocessor.json` file. You can rename the file or load and save the processor back which renames it automatically. Loading from `preprocessor.json` will be removed in v5.0.
-INFO 2025-07-29 10:16:50 ts/train.py:144 Creating optimizer and scheduler
-INFO 2025-07-29 10:16:50 ts/train.py:156 Output dir: outputs/train/my_smolvla3
-INFO 2025-07-29 10:16:50 ts/train.py:159 cfg.steps=200000 (200K)
-INFO 2025-07-29 10:16:50 ts/train.py:160 dataset.num_frames=52970 (53K)
-INFO 2025-07-29 10:16:50 ts/train.py:161 dataset.num_episodes=432
-INFO 2025-07-29 10:16:50 ts/train.py:162 num_learnable_params=99880992 (100M)
-INFO 2025-07-29 10:16:50 ts/train.py:163 num_total_params=450046220 (450M)
-INFO 2025-07-29 10:16:50 ts/train.py:202 Start offline training on a fixed dataset
+INFO 2025-07-29 19:12:13 odeling.py:1004 We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+INFO 2025-07-29 19:12:20 ts/train.py:144 Creating optimizer and scheduler
+INFO 2025-07-29 19:12:20 ts/train.py:156 Output dir: outputs/train/my_smolvla3
+INFO 2025-07-29 19:12:20 ts/train.py:159 cfg.steps=200000 (200K)
+INFO 2025-07-29 19:12:20 ts/train.py:160 dataset.num_frames=52970 (53K)
+INFO 2025-07-29 19:12:20 ts/train.py:161 dataset.num_episodes=432
+INFO 2025-07-29 19:12:20 ts/train.py:162 num_learnable_params=99880992 (100M)
+INFO 2025-07-29 19:12:20 ts/train.py:163 num_total_params=450046220 (450M)
+INFO 2025-07-29 19:12:20 ts/train.py:202 Start offline training on a fixed dataset
 Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
 Reducing the number of VLM layers to 16 ...
 [standardise_state_dict] 'normalize_inputs.buffer_observation_state.mean'  ←  ['normalize_inputs.so100-red_buffer_observation_state.mean', 'normalize_inputs.so100_buffer_observation_state.mean']
@@ -142,481 +138,7 @@ Reducing the number of VLM layers to 16 ...
 [standardise_state_dict] 'normalize_targets.buffer_action.std'  ←  ['normalize_targets.so100-red_buffer_action.std', 'normalize_targets.so100_buffer_action.std']
 [standardise_state_dict] 'unnormalize_outputs.buffer_action.mean'  ←  ['unnormalize_outputs.so100-red_buffer_action.mean', 'unnormalize_outputs.so100_buffer_action.mean']
 [standardise_state_dict] 'unnormalize_outputs.buffer_action.std'  ←  ['unnormalize_outputs.so100-red_buffer_action.std', 'unnormalize_outputs.so100_buffer_action.std']
-Traceback (most recent call last):
-  File "/home/lunet/coimd/lerobot1/lerobot/src/lerobot/scripts/train.py", line 291, in <module>
-    train()
-  File "/home/lunet/coimd/lerobot1/lerobot/src/lerobot/configs/parser.py", line 225, in wrapper_inner
-    response = fn(cfg, *args, **kwargs)
-  File "/home/lunet/coimd/lerobot1/lerobot/src/lerobot/scripts/train.py", line 212, in train
-    train_tracker, output_dict = update_policy(
-  File "/home/lunet/coimd/lerobot1/lerobot/src/lerobot/scripts/train.py", line 71, in update_policy
-    loss, output_dict = policy.forward(batch)
-  File "/home/lunet/coimd/lerobot1/lerobot/src/lerobot/policies/smolvla/modeling_smolvla.py", line 461, in forward
-    losses = self.model.forward(images, img_masks, lang_tokens, lang_masks, state, actions, noise, time)
-  File "/home/lunet/coimd/lerobot1/lerobot/src/lerobot/policies/smolvla/modeling_smolvla.py", line 852, in forward
-    (_, suffix_out), _ = self.vlm_with_expert.forward(
-  File "/home/lunet/coimd/lerobot1/lerobot/src/lerobot/policies/smolvla/smolvlm_with_expert.py", line 444, in forward
-    att_outputs, past_key_values = self.forward_cross_attn_layer(
-  File "/home/lunet/coimd/lerobot1/lerobot/src/lerobot/policies/smolvla/smolvlm_with_expert.py", line 302, in forward_cross_attn_layer
-    hidden_states = layer.input_layernorm(inputs_embeds[0])
-  File "/home/lunet/coimd/.conda/envs/lerobot1/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-  File "/home/lunet/coimd/.conda/envs/lerobot1/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "/home/lunet/coimd/.conda/envs/lerobot1/lib/python3.10/site-packages/accelerate/hooks.py", line 175, in new_forward
-    output = module._old_forward(*args, **kwargs)
-  File "/home/lunet/coimd/.conda/envs/lerobot1/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 66, in forward
-    return self.weight * hidden_states.to(input_dtype)
-RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cuda:1!
-INFO 2025-07-29 10:29:05 ils/utils.py:48 Cuda backend detected, using cuda.
-WARNING 2025-07-29 10:29:05 /policies.py:79 Device 'None' is not available. Switching to 'cuda'.
-INFO 2025-07-29 10:29:05 ts/train.py:111 {'batch_size': 256,
- 'dataset': {'episodes': None,
-             'image_transforms': {'enable': False,
-                                  'max_num_transforms': 3,
-                                  'random_order': False,
-                                  'tfs': {'brightness': {'kwargs': {'brightness': [0.8,
-                                                                                   1.2]},
-                                                         'type': 'ColorJitter',
-                                                         'weight': 1.0},
-                                          'contrast': {'kwargs': {'contrast': [0.8,
-                                                                               1.2]},
-                                                       'type': 'ColorJitter',
-                                                       'weight': 1.0},
-                                          'hue': {'kwargs': {'hue': [-0.05,
-                                                                     0.05]},
-                                                  'type': 'ColorJitter',
-                                                  'weight': 1.0},
-                                          'saturation': {'kwargs': {'saturation': [0.5,
-                                                                                   1.5]},
-                                                         'type': 'ColorJitter',
-                                                         'weight': 1.0},
-                                          'sharpness': {'kwargs': {'sharpness': [0.5,
-                                                                                 1.5]},
-                                                        'type': 'SharpnessJitter',
-                                                        'weight': 1.0}}},
-             'repo_id': 'aopolin-lv/libero_spatial_no_noops_lerobot_v21',
-             'revision': None,
-             'root': None,
-             'use_imagenet_stats': True,
-             'video_backend': 'torchcodec'},
- 'env': None,
- 'eval': {'batch_size': 50, 'n_episodes': 50, 'use_async_envs': False},
- 'eval_freq': 2000,
- 'job_name': 'my_smolvla_training',
- 'log_freq': 200,
- 'num_workers': 4,
- 'optimizer': {'betas': [0.9, 0.95],
-               'eps': 1e-08,
-               'grad_clip_norm': 10.0,
-               'lr': 0.0001,
-               'type': 'adamw',
-               'weight_decay': 1e-10},
- 'output_dir': 'outputs/train/my_smolvla3',
- 'policy': {'adapt_to_pi_aloha': False,
-            'add_image_special_tokens': False,
-            'attention_mode': 'cross_attn',
-            'chunk_size': 50,
-            'device': 'cuda',
-            'empty_cameras': 0,
-            'expert_width_multiplier': 0.75,
-            'freeze_vision_encoder': True,
-            'input_features': {'observation.image': {'shape': [3, 256, 256],
-                                                     'type': <FeatureType.VISUAL: 'VISUAL'>},
-                               'observation.image2': {'shape': [3, 256, 256],
-                                                      'type': <FeatureType.VISUAL: 'VISUAL'>},
-                               'observation.image3': {'shape': [3, 256, 256],
-                                                      'type': <FeatureType.VISUAL: 'VISUAL'>},
-                               'observation.state': {'shape': [6],
-                                                     'type': <FeatureType.STATE: 'STATE'>}},
-            'license': None,
-            'load_vlm_weights': True,
-            'max_action_dim': 32,
-            'max_period': 4.0,
-            'max_state_dim': 32,
-            'min_period': 0.004,
-            'n_action_steps': 50,
-            'n_obs_steps': 1,
-            'normalization_mapping': {'ACTION': <NormalizationMode.MEAN_STD: 'MEAN_STD'>,
-                                      'STATE': <NormalizationMode.MEAN_STD: 'MEAN_STD'>,
-                                      'VISUAL': <NormalizationMode.IDENTITY: 'IDENTITY'>},
-            'num_expert_layers': 0,
-            'num_steps': 10,
-            'num_vlm_layers': 16,
-            'optimizer_betas': [0.9, 0.95],
-            'optimizer_eps': 1e-08,
-            'optimizer_grad_clip_norm': 10.0,
-            'optimizer_lr': 0.0001,
-            'optimizer_weight_decay': 1e-10,
-            'output_features': {'action': {'shape': [6],
-                                           'type': <FeatureType.ACTION: 'ACTION'>}},
-            'pad_language_to': 'max_length',
-            'prefix_length': 0,
-            'private': None,
-            'push_to_hub': True,
-            'repo_id': 'Inishds/smolvla',
-            'resize_imgs_with_padding': [512, 512],
-            'scheduler_decay_lr': 2.5e-06,
-            'scheduler_decay_steps': 30000,
-            'scheduler_warmup_steps': 1000,
-            'self_attn_every_n_layers': 2,
-            'tags': None,
-            'tokenizer_max_length': 48,
-            'train_expert_only': True,
-            'train_state_proj': True,
-            'type': 'smolvla',
-            'use_amp': False,
-            'use_cache': True,
-            'use_delta_joint_actions_aloha': False,
-            'vlm_model_name': 'HuggingFaceTB/SmolVLM2-500M-Video-Instruct'},
- 'resume': False,
- 'save_checkpoint': True,
- 'save_freq': 20000,
- 'scheduler': {'decay_lr': 2.5e-06,
-               'num_decay_steps': 30000,
-               'num_warmup_steps': 1000,
-               'peak_lr': 0.0001,
-               'type': 'cosine_decay_with_warmup'},
- 'seed': 1000,
- 'steps': 200000,
- 'use_policy_training_preset': True,
- 'wandb': {'disable_artifact': False,
-           'enable': False,
-           'entity': None,
-           'mode': None,
-           'notes': None,
-           'project': 'lerobot',
-           'run_id': None}}
-INFO 2025-07-29 10:29:05 ts/train.py:117 Logs will be saved locally.
-INFO 2025-07-29 10:29:05 ts/train.py:127 Creating dataset
-INFO 2025-07-29 10:29:06 ts/train.py:138 Creating policy
-You have video processor config saved in `preprocessor.json` file which is deprecated. Video processor configs should be saved in their own `video_preprocessor.json` file. You can rename the file or load and save the processor back which renames it automatically. Loading from `preprocessor.json` will be removed in v5.0.
-INFO 2025-07-29 10:29:16 ts/train.py:144 Creating optimizer and scheduler
-INFO 2025-07-29 10:29:16 ts/train.py:156 Output dir: outputs/train/my_smolvla3
-INFO 2025-07-29 10:29:16 ts/train.py:159 cfg.steps=200000 (200K)
-INFO 2025-07-29 10:29:16 ts/train.py:160 dataset.num_frames=52970 (53K)
-INFO 2025-07-29 10:29:16 ts/train.py:161 dataset.num_episodes=432
-INFO 2025-07-29 10:29:16 ts/train.py:162 num_learnable_params=99880992 (100M)
-INFO 2025-07-29 10:29:16 ts/train.py:163 num_total_params=450046220 (450M)
-INFO 2025-07-29 10:29:16 ts/train.py:202 Start offline training on a fixed dataset
-Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
-Reducing the number of VLM layers to 16 ...
-[standardise_state_dict] 'normalize_inputs.buffer_observation_state.mean'  ←  ['normalize_inputs.so100-red_buffer_observation_state.mean', 'normalize_inputs.so100_buffer_observation_state.mean']
-[standardise_state_dict] 'normalize_inputs.buffer_observation_state.std'  ←  ['normalize_inputs.so100-red_buffer_observation_state.std', 'normalize_inputs.so100_buffer_observation_state.std']
-[standardise_state_dict] 'normalize_targets.buffer_action.mean'  ←  ['normalize_targets.so100-red_buffer_action.mean', 'normalize_targets.so100_buffer_action.mean']
-[standardise_state_dict] 'normalize_targets.buffer_action.std'  ←  ['normalize_targets.so100-red_buffer_action.std', 'normalize_targets.so100_buffer_action.std']
-[standardise_state_dict] 'unnormalize_outputs.buffer_action.mean'  ←  ['unnormalize_outputs.so100-red_buffer_action.mean', 'unnormalize_outputs.so100_buffer_action.mean']
-[standardise_state_dict] 'unnormalize_outputs.buffer_action.std'  ←  ['unnormalize_outputs.so100-red_buffer_action.std', 'unnormalize_outputs.so100_buffer_action.std']
-Traceback (most recent call last):
-  File "/home/lunet/coimd/lerobot1/lerobot/src/lerobot/scripts/train.py", line 291, in <module>
-    train()
-  File "/home/lunet/coimd/lerobot1/lerobot/src/lerobot/configs/parser.py", line 225, in wrapper_inner
-    response = fn(cfg, *args, **kwargs)
-  File "/home/lunet/coimd/lerobot1/lerobot/src/lerobot/scripts/train.py", line 212, in train
-    train_tracker, output_dict = update_policy(
-  File "/home/lunet/coimd/lerobot1/lerobot/src/lerobot/scripts/train.py", line 71, in update_policy
-    loss, output_dict = policy.forward(batch)
-  File "/home/lunet/coimd/lerobot1/lerobot/src/lerobot/policies/smolvla/modeling_smolvla.py", line 461, in forward
-    losses = self.model.forward(images, img_masks, lang_tokens, lang_masks, state, actions, noise, time)
-  File "/home/lunet/coimd/lerobot1/lerobot/src/lerobot/policies/smolvla/modeling_smolvla.py", line 843, in forward
-    prefix_embs, prefix_pad_masks, prefix_att_masks = self.embed_prefix(
-  File "/home/lunet/coimd/lerobot1/lerobot/src/lerobot/policies/smolvla/modeling_smolvla.py", line 726, in embed_prefix
-    img_emb = img_emb * torch.tensor(img_emb_dim**0.5, dtype=img_emb.dtype, device=img_emb.device)
-KeyboardInterrupt
-INFO 2025-07-29 10:34:55 ils/utils.py:48 Cuda backend detected, using cuda.
-WARNING 2025-07-29 10:34:55 /policies.py:79 Device 'None' is not available. Switching to 'cuda'.
-INFO 2025-07-29 10:34:55 ts/train.py:111 {'batch_size': 320,
- 'dataset': {'episodes': None,
-             'image_transforms': {'enable': False,
-                                  'max_num_transforms': 3,
-                                  'random_order': False,
-                                  'tfs': {'brightness': {'kwargs': {'brightness': [0.8,
-                                                                                   1.2]},
-                                                         'type': 'ColorJitter',
-                                                         'weight': 1.0},
-                                          'contrast': {'kwargs': {'contrast': [0.8,
-                                                                               1.2]},
-                                                       'type': 'ColorJitter',
-                                                       'weight': 1.0},
-                                          'hue': {'kwargs': {'hue': [-0.05,
-                                                                     0.05]},
-                                                  'type': 'ColorJitter',
-                                                  'weight': 1.0},
-                                          'saturation': {'kwargs': {'saturation': [0.5,
-                                                                                   1.5]},
-                                                         'type': 'ColorJitter',
-                                                         'weight': 1.0},
-                                          'sharpness': {'kwargs': {'sharpness': [0.5,
-                                                                                 1.5]},
-                                                        'type': 'SharpnessJitter',
-                                                        'weight': 1.0}}},
-             'repo_id': 'aopolin-lv/libero_spatial_no_noops_lerobot_v21',
-             'revision': None,
-             'root': None,
-             'use_imagenet_stats': True,
-             'video_backend': 'torchcodec'},
- 'env': None,
- 'eval': {'batch_size': 50, 'n_episodes': 50, 'use_async_envs': False},
- 'eval_freq': 2000,
- 'job_name': 'my_smolvla_training',
- 'log_freq': 200,
- 'num_workers': 4,
- 'optimizer': {'betas': [0.9, 0.95],
-               'eps': 1e-08,
-               'grad_clip_norm': 10.0,
-               'lr': 0.0001,
-               'type': 'adamw',
-               'weight_decay': 1e-10},
- 'output_dir': 'outputs/train/my_smolvla3',
- 'policy': {'adapt_to_pi_aloha': False,
-            'add_image_special_tokens': False,
-            'attention_mode': 'cross_attn',
-            'chunk_size': 50,
-            'device': 'cuda',
-            'empty_cameras': 0,
-            'expert_width_multiplier': 0.75,
-            'freeze_vision_encoder': True,
-            'input_features': {'observation.image': {'shape': [3, 256, 256],
-                                                     'type': <FeatureType.VISUAL: 'VISUAL'>},
-                               'observation.image2': {'shape': [3, 256, 256],
-                                                      'type': <FeatureType.VISUAL: 'VISUAL'>},
-                               'observation.image3': {'shape': [3, 256, 256],
-                                                      'type': <FeatureType.VISUAL: 'VISUAL'>},
-                               'observation.state': {'shape': [6],
-                                                     'type': <FeatureType.STATE: 'STATE'>}},
-            'license': None,
-            'load_vlm_weights': True,
-            'max_action_dim': 32,
-            'max_period': 4.0,
-            'max_state_dim': 32,
-            'min_period': 0.004,
-            'n_action_steps': 50,
-            'n_obs_steps': 1,
-            'normalization_mapping': {'ACTION': <NormalizationMode.MEAN_STD: 'MEAN_STD'>,
-                                      'STATE': <NormalizationMode.MEAN_STD: 'MEAN_STD'>,
-                                      'VISUAL': <NormalizationMode.IDENTITY: 'IDENTITY'>},
-            'num_expert_layers': 0,
-            'num_steps': 10,
-            'num_vlm_layers': 16,
-            'optimizer_betas': [0.9, 0.95],
-            'optimizer_eps': 1e-08,
-            'optimizer_grad_clip_norm': 10.0,
-            'optimizer_lr': 0.0001,
-            'optimizer_weight_decay': 1e-10,
-            'output_features': {'action': {'shape': [6],
-                                           'type': <FeatureType.ACTION: 'ACTION'>}},
-            'pad_language_to': 'max_length',
-            'prefix_length': 0,
-            'private': None,
-            'push_to_hub': True,
-            'repo_id': 'Inishds/smolvla',
-            'resize_imgs_with_padding': [512, 512],
-            'scheduler_decay_lr': 2.5e-06,
-            'scheduler_decay_steps': 30000,
-            'scheduler_warmup_steps': 1000,
-            'self_attn_every_n_layers': 2,
-            'tags': None,
-            'tokenizer_max_length': 48,
-            'train_expert_only': True,
-            'train_state_proj': True,
-            'type': 'smolvla',
-            'use_amp': False,
-            'use_cache': True,
-            'use_delta_joint_actions_aloha': False,
-            'vlm_model_name': 'HuggingFaceTB/SmolVLM2-500M-Video-Instruct'},
- 'resume': False,
- 'save_checkpoint': True,
- 'save_freq': 20000,
- 'scheduler': {'decay_lr': 2.5e-06,
-               'num_decay_steps': 30000,
-               'num_warmup_steps': 1000,
-               'peak_lr': 0.0001,
-               'type': 'cosine_decay_with_warmup'},
- 'seed': 1000,
- 'steps': 200000,
- 'use_policy_training_preset': True,
- 'wandb': {'disable_artifact': False,
-           'enable': False,
-           'entity': None,
-           'mode': None,
-           'notes': None,
-           'project': 'lerobot',
-           'run_id': None}}
-INFO 2025-07-29 10:34:55 ts/train.py:117 Logs will be saved locally.
-INFO 2025-07-29 10:34:55 ts/train.py:127 Creating dataset
-INFO 2025-07-29 10:34:56 ts/train.py:138 Creating policy
-You have video processor config saved in `preprocessor.json` file which is deprecated. Video processor configs should be saved in their own `video_preprocessor.json` file. You can rename the file or load and save the processor back which renames it automatically. Loading from `preprocessor.json` will be removed in v5.0.
-INFO 2025-07-29 10:35:07 ts/train.py:144 Creating optimizer and scheduler
-INFO 2025-07-29 10:35:07 ts/train.py:156 Output dir: outputs/train/my_smolvla3
-INFO 2025-07-29 10:35:07 ts/train.py:159 cfg.steps=200000 (200K)
-INFO 2025-07-29 10:35:07 ts/train.py:160 dataset.num_frames=52970 (53K)
-INFO 2025-07-29 10:35:07 ts/train.py:161 dataset.num_episodes=432
-INFO 2025-07-29 10:35:07 ts/train.py:162 num_learnable_params=99880992 (100M)
-INFO 2025-07-29 10:35:07 ts/train.py:163 num_total_params=450046220 (450M)
-INFO 2025-07-29 10:35:07 ts/train.py:202 Start offline training on a fixed dataset
-Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
-Reducing the number of VLM layers to 16 ...
-[standardise_state_dict] 'normalize_inputs.buffer_observation_state.mean'  ←  ['normalize_inputs.so100-red_buffer_observation_state.mean', 'normalize_inputs.so100_buffer_observation_state.mean']
-[standardise_state_dict] 'normalize_inputs.buffer_observation_state.std'  ←  ['normalize_inputs.so100-red_buffer_observation_state.std', 'normalize_inputs.so100_buffer_observation_state.std']
-[standardise_state_dict] 'normalize_targets.buffer_action.mean'  ←  ['normalize_targets.so100-red_buffer_action.mean', 'normalize_targets.so100_buffer_action.mean']
-[standardise_state_dict] 'normalize_targets.buffer_action.std'  ←  ['normalize_targets.so100-red_buffer_action.std', 'normalize_targets.so100_buffer_action.std']
-[standardise_state_dict] 'unnormalize_outputs.buffer_action.mean'  ←  ['unnormalize_outputs.so100-red_buffer_action.mean', 'unnormalize_outputs.so100_buffer_action.mean']
-[standardise_state_dict] 'unnormalize_outputs.buffer_action.std'  ←  ['unnormalize_outputs.so100-red_buffer_action.std', 'unnormalize_outputs.so100_buffer_action.std']
-Traceback (most recent call last):
-  File "/home/lunet/coimd/lerobot1/lerobot/src/lerobot/scripts/train.py", line 291, in <module>
-    train()
-  File "/home/lunet/coimd/lerobot1/lerobot/src/lerobot/configs/parser.py", line 225, in wrapper_inner
-    response = fn(cfg, *args, **kwargs)
-  File "/home/lunet/coimd/lerobot1/lerobot/src/lerobot/scripts/train.py", line 212, in train
-    train_tracker, output_dict = update_policy(
-  File "/home/lunet/coimd/lerobot1/lerobot/src/lerobot/scripts/train.py", line 73, in update_policy
-    grad_scaler.scale(loss).backward()
-  File "/home/lunet/coimd/.conda/envs/lerobot1/lib/python3.10/site-packages/torch/_tensor.py", line 648, in backward
-    torch.autograd.backward(
-  File "/home/lunet/coimd/.conda/envs/lerobot1/lib/python3.10/site-packages/torch/autograd/__init__.py", line 353, in backward
-    _engine_run_backward(
-  File "/home/lunet/coimd/.conda/envs/lerobot1/lib/python3.10/site-packages/torch/autograd/graph.py", line 824, in _engine_run_backward
-    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
-KeyboardInterrupt
-INFO 2025-07-29 10:36:13 ils/utils.py:48 Cuda backend detected, using cuda.
-WARNING 2025-07-29 10:36:13 /policies.py:79 Device 'None' is not available. Switching to 'cuda'.
-INFO 2025-07-29 10:36:13 ts/train.py:111 {'batch_size': 350,
- 'dataset': {'episodes': None,
-             'image_transforms': {'enable': False,
-                                  'max_num_transforms': 3,
-                                  'random_order': False,
-                                  'tfs': {'brightness': {'kwargs': {'brightness': [0.8,
-                                                                                   1.2]},
-                                                         'type': 'ColorJitter',
-                                                         'weight': 1.0},
-                                          'contrast': {'kwargs': {'contrast': [0.8,
-                                                                               1.2]},
-                                                       'type': 'ColorJitter',
-                                                       'weight': 1.0},
-                                          'hue': {'kwargs': {'hue': [-0.05,
-                                                                     0.05]},
-                                                  'type': 'ColorJitter',
-                                                  'weight': 1.0},
-                                          'saturation': {'kwargs': {'saturation': [0.5,
-                                                                                   1.5]},
-                                                         'type': 'ColorJitter',
-                                                         'weight': 1.0},
-                                          'sharpness': {'kwargs': {'sharpness': [0.5,
-                                                                                 1.5]},
-                                                        'type': 'SharpnessJitter',
-                                                        'weight': 1.0}}},
-             'repo_id': 'aopolin-lv/libero_spatial_no_noops_lerobot_v21',
-             'revision': None,
-             'root': None,
-             'use_imagenet_stats': True,
-             'video_backend': 'torchcodec'},
- 'env': None,
- 'eval': {'batch_size': 50, 'n_episodes': 50, 'use_async_envs': False},
- 'eval_freq': 2000,
- 'job_name': 'my_smolvla_training',
- 'log_freq': 200,
- 'num_workers': 4,
- 'optimizer': {'betas': [0.9, 0.95],
-               'eps': 1e-08,
-               'grad_clip_norm': 10.0,
-               'lr': 0.0001,
-               'type': 'adamw',
-               'weight_decay': 1e-10},
- 'output_dir': 'outputs/train/my_smolvla3',
- 'policy': {'adapt_to_pi_aloha': False,
-            'add_image_special_tokens': False,
-            'attention_mode': 'cross_attn',
-            'chunk_size': 50,
-            'device': 'cuda',
-            'empty_cameras': 0,
-            'expert_width_multiplier': 0.75,
-            'freeze_vision_encoder': True,
-            'input_features': {'observation.image': {'shape': [3, 256, 256],
-                                                     'type': <FeatureType.VISUAL: 'VISUAL'>},
-                               'observation.image2': {'shape': [3, 256, 256],
-                                                      'type': <FeatureType.VISUAL: 'VISUAL'>},
-                               'observation.image3': {'shape': [3, 256, 256],
-                                                      'type': <FeatureType.VISUAL: 'VISUAL'>},
-                               'observation.state': {'shape': [6],
-                                                     'type': <FeatureType.STATE: 'STATE'>}},
-            'license': None,
-            'load_vlm_weights': True,
-            'max_action_dim': 32,
-            'max_period': 4.0,
-            'max_state_dim': 32,
-            'min_period': 0.004,
-            'n_action_steps': 50,
-            'n_obs_steps': 1,
-            'normalization_mapping': {'ACTION': <NormalizationMode.MEAN_STD: 'MEAN_STD'>,
-                                      'STATE': <NormalizationMode.MEAN_STD: 'MEAN_STD'>,
-                                      'VISUAL': <NormalizationMode.IDENTITY: 'IDENTITY'>},
-            'num_expert_layers': 0,
-            'num_steps': 10,
-            'num_vlm_layers': 16,
-            'optimizer_betas': [0.9, 0.95],
-            'optimizer_eps': 1e-08,
-            'optimizer_grad_clip_norm': 10.0,
-            'optimizer_lr': 0.0001,
-            'optimizer_weight_decay': 1e-10,
-            'output_features': {'action': {'shape': [6],
-                                           'type': <FeatureType.ACTION: 'ACTION'>}},
-            'pad_language_to': 'max_length',
-            'prefix_length': 0,
-            'private': None,
-            'push_to_hub': True,
-            'repo_id': 'Inishds/smolvla',
-            'resize_imgs_with_padding': [512, 512],
-            'scheduler_decay_lr': 2.5e-06,
-            'scheduler_decay_steps': 30000,
-            'scheduler_warmup_steps': 1000,
-            'self_attn_every_n_layers': 2,
-            'tags': None,
-            'tokenizer_max_length': 48,
-            'train_expert_only': True,
-            'train_state_proj': True,
-            'type': 'smolvla',
-            'use_amp': False,
-            'use_cache': True,
-            'use_delta_joint_actions_aloha': False,
-            'vlm_model_name': 'HuggingFaceTB/SmolVLM2-500M-Video-Instruct'},
- 'resume': False,
- 'save_checkpoint': True,
- 'save_freq': 20000,
- 'scheduler': {'decay_lr': 2.5e-06,
-               'num_decay_steps': 30000,
-               'num_warmup_steps': 1000,
-               'peak_lr': 0.0001,
-               'type': 'cosine_decay_with_warmup'},
- 'seed': 1000,
- 'steps': 200000,
- 'use_policy_training_preset': True,
- 'wandb': {'disable_artifact': False,
-           'enable': False,
-           'entity': None,
-           'mode': None,
-           'notes': None,
-           'project': 'lerobot',
-           'run_id': None}}
-INFO 2025-07-29 10:36:13 ts/train.py:117 Logs will be saved locally.
-INFO 2025-07-29 10:36:13 ts/train.py:127 Creating dataset
-INFO 2025-07-29 10:36:14 ts/train.py:138 Creating policy
-You have video processor config saved in `preprocessor.json` file which is deprecated. Video processor configs should be saved in their own `video_preprocessor.json` file. You can rename the file or load and save the processor back which renames it automatically. Loading from `preprocessor.json` will be removed in v5.0.
-INFO 2025-07-29 10:36:25 ts/train.py:144 Creating optimizer and scheduler
-INFO 2025-07-29 10:36:25 ts/train.py:156 Output dir: outputs/train/my_smolvla3
-INFO 2025-07-29 10:36:25 ts/train.py:159 cfg.steps=200000 (200K)
-INFO 2025-07-29 10:36:25 ts/train.py:160 dataset.num_frames=52970 (53K)
-INFO 2025-07-29 10:36:25 ts/train.py:161 dataset.num_episodes=432
-INFO 2025-07-29 10:36:25 ts/train.py:162 num_learnable_params=99880992 (100M)
-INFO 2025-07-29 10:36:25 ts/train.py:163 num_total_params=450046220 (450M)
-INFO 2025-07-29 10:36:25 ts/train.py:202 Start offline training on a fixed dataset
-Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
-Reducing the number of VLM layers to 16 ...
-[standardise_state_dict] 'normalize_inputs.buffer_observation_state.mean'  ←  ['normalize_inputs.so100-red_buffer_observation_state.mean', 'normalize_inputs.so100_buffer_observation_state.mean']
-[standardise_state_dict] 'normalize_inputs.buffer_observation_state.std'  ←  ['normalize_inputs.so100-red_buffer_observation_state.std', 'normalize_inputs.so100_buffer_observation_state.std']
-[standardise_state_dict] 'normalize_targets.buffer_action.mean'  ←  ['normalize_targets.so100-red_buffer_action.mean', 'normalize_targets.so100_buffer_action.mean']
-[standardise_state_dict] 'normalize_targets.buffer_action.std'  ←  ['normalize_targets.so100-red_buffer_action.std', 'normalize_targets.so100_buffer_action.std']
-[standardise_state_dict] 'unnormalize_outputs.buffer_action.mean'  ←  ['unnormalize_outputs.so100-red_buffer_action.mean', 'unnormalize_outputs.so100_buffer_action.mean']
-[standardise_state_dict] 'unnormalize_outputs.buffer_action.std'  ←  ['unnormalize_outputs.so100-red_buffer_action.std', 'unnormalize_outputs.so100_buffer_action.std']
+INFO 2025-07-29 19:19:16 ts/train.py:232 step:200 smpl:51K ep:418 epch:0.97 loss:0.361 grdn:0.950 lr:1.0e-05 updt_s:2.049 data_s:0.028
 huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
 To disable this warning, you can either:
 	- Avoid using `tokenizers` before the fork if possible
@@ -633,7 +155,7 @@ huggingface/tokenizers: The current process just got forked, after parallelism h
 To disable this warning, you can either:
 	- Avoid using `tokenizers` before the fork if possible
 	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
-INFO 2025-07-29 10:46:00 ts/train.py:232 step:200 smpl:70K ep:571 epch:1.32 loss:0.398 grdn:1.015 lr:1.0e-05 updt_s:2.797 data_s:0.079
+INFO 2025-07-29 19:26:09 ts/train.py:232 step:400 smpl:102K ep:835 epch:1.93 loss:0.158 grdn:0.252 lr:3.0e-05 updt_s:2.039 data_s:0.025
 huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
 To disable this warning, you can either:
 	- Avoid using `tokenizers` before the fork if possible
@@ -650,7 +172,7 @@ huggingface/tokenizers: The current process just got forked, after parallelism h
 To disable this warning, you can either:
 	- Avoid using `tokenizers` before the fork if possible
 	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
-INFO 2025-07-29 10:55:21 ts/train.py:232 step:400 smpl:140K ep:1K epch:2.64 loss:0.160 grdn:0.249 lr:3.0e-05 updt_s:2.770 data_s:0.033
+INFO 2025-07-29 19:33:00 ts/train.py:232 step:600 smpl:154K ep:1K epch:2.90 loss:0.125 grdn:0.286 lr:5.0e-05 updt_s:2.028 data_s:0.026
 huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
 To disable this warning, you can either:
 	- Avoid using `tokenizers` before the fork if possible
@@ -667,3 +189,225 @@ huggingface/tokenizers: The current process just got forked, after parallelism h
 To disable this warning, you can either:
 	- Avoid using `tokenizers` before the fork if possible
 	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+INFO 2025-07-29 19:39:51 ts/train.py:232 step:800 smpl:205K ep:2K epch:3.87 loss:0.112 grdn:0.305 lr:7.0e-05 updt_s:2.028 data_s:0.024
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+INFO 2025-07-29 19:46:43 ts/train.py:232 step:1K smpl:256K ep:2K epch:4.83 loss:0.106 grdn:0.314 lr:9.0e-05 updt_s:2.031 data_s:0.026
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+INFO 2025-07-29 19:53:34 ts/train.py:232 step:1K smpl:307K ep:3K epch:5.80 loss:0.101 grdn:0.296 lr:1.0e-04 updt_s:2.031 data_s:0.026
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+INFO 2025-07-29 20:00:26 ts/train.py:232 step:1K smpl:358K ep:3K epch:6.77 loss:0.097 grdn:0.268 lr:1.0e-04 updt_s:2.032 data_s:0.024
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+INFO 2025-07-29 20:07:18 ts/train.py:232 step:2K smpl:410K ep:3K epch:7.73 loss:0.093 grdn:0.272 lr:9.9e-05 updt_s:2.033 data_s:0.025
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+INFO 2025-07-29 20:14:09 ts/train.py:232 step:2K smpl:461K ep:4K epch:8.70 loss:0.089 grdn:0.251 lr:9.9e-05 updt_s:2.033 data_s:0.024
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+INFO 2025-07-29 20:21:02 ts/train.py:232 step:2K smpl:512K ep:4K epch:9.67 loss:0.086 grdn:0.255 lr:9.9e-05 updt_s:2.033 data_s:0.026
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+INFO 2025-07-29 20:27:53 ts/train.py:232 step:2K smpl:563K ep:5K epch:10.63 loss:0.083 grdn:0.250 lr:9.9e-05 updt_s:2.031 data_s:0.026
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+INFO 2025-07-29 20:34:46 ts/train.py:232 step:2K smpl:614K ep:5K epch:11.60 loss:0.080 grdn:0.251 lr:9.9e-05 updt_s:2.032 data_s:0.027
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+INFO 2025-07-29 20:41:37 ts/train.py:232 step:3K smpl:666K ep:5K epch:12.57 loss:0.076 grdn:0.249 lr:9.8e-05 updt_s:2.033 data_s:0.024
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+INFO 2025-07-29 20:48:29 ts/train.py:232 step:3K smpl:717K ep:6K epch:13.53 loss:0.072 grdn:0.247 lr:9.8e-05 updt_s:2.032 data_s:0.026
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+INFO 2025-07-29 20:55:21 ts/train.py:232 step:3K smpl:768K ep:6K epch:14.50 loss:0.068 grdn:0.246 lr:9.8e-05 updt_s:2.029 data_s:0.026
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+INFO 2025-07-29 21:02:12 ts/train.py:232 step:3K smpl:819K ep:7K epch:15.47 loss:0.065 grdn:0.246 lr:9.7e-05 updt_s:2.029 data_s:0.025
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+INFO 2025-07-29 21:09:03 ts/train.py:232 step:3K smpl:870K ep:7K epch:16.43 loss:0.061 grdn:0.241 lr:9.7e-05 updt_s:2.029 data_s:0.026

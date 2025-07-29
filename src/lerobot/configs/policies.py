@@ -62,6 +62,10 @@ class PreTrainedConfig(draccus.ChoiceRegistry, HubMixin, abc.ABC):
     # automatic gradient scaling is used.
     use_amp: bool = False
 
+    # LoRA/PEFT parameter-efficient finetuning
+    use_lora: bool = False
+    lora_config: dict = field(default_factory=dict)
+
     push_to_hub: bool = True
     repo_id: str | None = None
 
