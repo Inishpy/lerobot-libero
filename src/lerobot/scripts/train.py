@@ -115,9 +115,9 @@ def train(cfg: TrainPipelineConfig):
 
     # --- LoRA PEFT-style adapter push options ---
     import os
-    push_lora_adapter_to_hub = getattr(cfg.policy, "push_lora_adapter_to_hub", False)
-    lora_adapter_repo_id = getattr(cfg.policy, "lora_adapter_repo_id", None)
-    lora_base_model = getattr(cfg.policy, "lora_base_model", None)
+    push_lora_adapter_to_hub = getattr(cfg.policy, "push_lora_adapter_to_hub", True)
+    lora_adapter_repo_id = getattr(cfg.policy, "lora_adapter_repo_id", "Inishds/smolvla_adaptor")
+    lora_base_model = getattr(cfg.policy, "lora_base_model", "lerobot/smolvla_base")
     lora_adapter_private = getattr(cfg.policy, "lora_adapter_private", False)
     lora_adapter_token = getattr(cfg.policy, "lora_adapter_token", None)
 
@@ -317,12 +317,17 @@ def train(cfg: TrainPipelineConfig):
         policy.push_model_to_hub(cfg)
 
     # --- Optionally push LoRA adapter to hub, PEFT-style ---
+    logging.info(f"DEBUG: use_lora={getattr(cfg.policy, 'use_lora', False)}")
+    logging.info(f"DEBUG: push_lora_adapter_to_hub={push_lora_adapter_to_hub}")
+    logging.info(f"DEBUG: lora_adapter_repo_id={lora_adapter_repo_id}")
+    logging.info(f"DEBUG: lora_base_model={lora_base_model}")
     if (
         getattr(cfg.policy, "use_lora", False)
         and push_lora_adapter_to_hub
         and lora_adapter_repo_id
         and lora_base_model
     ):
+        print("Pushing LoRA adapter to hub...")
         try:
             from lora import push_lora_adapter_to_hub as push_adapter
             push_adapter(

@@ -96,12 +96,14 @@ def standardise_state_dict(
     • If several variant keys collapse to the same canonical name we keep the
       first one and log the collision.
     • Returns the new dict + a list of entries that could not be matched.
+    • LoRA support: always include keys containing 'lora_'.
     """
     out, collisions, unmatched = {}, {}, []
 
     for k, v in checkpoint.items():
         canon = canonicalise(k)
-        if canon in ref_keys:
+        # Always include LoRA keys
+        if canon in ref_keys or "lora_" in canon:
             if canon in out:  # duplicate after collapsing
                 collisions.setdefault(canon, []).append(k)
             else:
@@ -115,7 +117,8 @@ def standardise_state_dict(
         if unmatched:
             print(f"[standardise_state_dict] kept {len(unmatched)} unmatched keys")
 
-    out.update({k: checkpoint[k] for k in unmatched})
+    # Optionally, add unmatched LoRA keys as well (if not already included)
+    out.update({k: checkpoint[k] for k in unmatched if "lora_" in k})
     return out, unmatched
 
 
